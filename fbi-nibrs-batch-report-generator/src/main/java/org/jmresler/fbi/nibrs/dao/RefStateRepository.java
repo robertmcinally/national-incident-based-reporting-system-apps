@@ -1,6 +1,5 @@
 package org.jmresler.fbi.nibrs.dao;
 
-import org.jmresler.fbi.nibrs.Agencies;
 import org.jmresler.fbi.nibrs.RefState;
 import org.springframework.data.jpa.repository.JpaRepository;
 

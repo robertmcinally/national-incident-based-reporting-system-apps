@@ -1,7 +1,6 @@
 package org.jmresler.fbi.nibrs.services;
 
 import lombok.extern.slf4j.Slf4j;
-import org.jmresler.fbi.nibrs.RefState;
 import org.jmresler.fbi.nibrs.dao.RefStateRepository;
 import org.jmresler.fbi.nibrs.dto.RefStateDTO;
 import org.jmresler.fbi.nibrs.mappers.RefStateMapper;

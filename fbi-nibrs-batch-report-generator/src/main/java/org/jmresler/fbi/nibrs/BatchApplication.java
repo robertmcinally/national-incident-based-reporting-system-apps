@@ -9,22 +9,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j
 @SpringBootApplication(scanBasePackages = {
-		"org.jmresler.fbi.nibrs.mappers",
-		"org.jmresler.fbi.nibrs"
+		"org.jmresler.fbi.nibrs.mappers"
 })
-public class BatchApplication implements CommandLineRunner {
+public class BatchApplication {
 
-	@Autowired
-	protected RefStateService service;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BatchApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		service.findAllRefStates().forEach(each -> {
-			log.debug(each.toString());
-		});
-	}
 }
