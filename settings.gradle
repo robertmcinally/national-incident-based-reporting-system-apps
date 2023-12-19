@@ -1,0 +1,6 @@
+rootProject.name = 'fbi-nibrs-applications'
+include('fbi-nibrs-dtos')
+include('fbi-nibrs-entities-mysql')
+include('fbi-nibrs-entities-postgres')
+include('fbi-nibrs-batch-report-generator')
+include('fbi-nibrs-agencies-rest-endpoint')

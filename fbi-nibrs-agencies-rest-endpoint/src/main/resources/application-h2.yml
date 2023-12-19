@@ -1,0 +1,17 @@
+
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: root
+    password: 'password'
+    url: jdbc:h2:file:./data/nibrs
+  jpa:
+    database: h2
+    generate-ddl: true
+    open-in-view: true
+    properties:
+      hibernate:
+        '[show_sql]': true
+        '[use_sql_comments]': true
+        '[format_sql]': true

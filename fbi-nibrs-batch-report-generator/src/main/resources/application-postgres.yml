@@ -1,0 +1,38 @@
+logging:
+  level:
+    root: warn
+    '[org.jmresler.fbi.nibrs]': debug
+  file:
+    name: logs/${spring.application.name}.log
+
+spring:
+  application:
+    name: batch-data-loader
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
+  datasource:
+    nibrs:
+      driver-class-name: org.postgresql.Driver
+      username: postgres
+      password: 'password'
+      url: jdbc:postgresql://localhost:5432/nibrs
+      hikari:
+        transaction-isolation: TRANSACTION_READ_UNCOMMITTED
+    meta:
+      driver-class-name: org.h2.Driver
+      username: app
+      password: app
+      url: jdbc:h2:file:./data/meta
+      hikari:
+        transaction-isolation: TRANSACTION_READ_UNCOMMITTED
+  jpa:
+    database: postgresql
+    open-in-view: true
+    properties:
+      hibernate:
+        '[show_sql]': true
+        '[use_sql_comments]': true
+        '[format_sql]': true

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: nibrs-batch
+  profiles:
+    active: ${RUNTIME_ENV:mysql}
+
+org:
+  jmresler:
+    nibrs:
+      batch:
+        props:
+        chunk-size: 10
+        allowed-skips: 10
+      email:
+        server: localhost
+        port: 25
+        sender: rmic@rocketmail.com
+        password: password
+        recipients: me, myself, i

@@ -1,0 +1,17 @@
+logging:
+  level:
+    root: warn
+    '[org.jmresler.fbi.nibrs]': debug
+  file:
+    name: logs/${spring.application.name}.log
+
+server:
+  servlet:
+    context-path: /v1/${spring.application.name}
+
+
+spring:
+  application:
+    name: web-app
+  profiles:
+    active: ${RUNTIME_ENV:postgres}
