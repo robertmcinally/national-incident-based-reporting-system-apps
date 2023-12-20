@@ -1,6 +1,6 @@
 # FBI NIBRS Application Bundle 
 
-## Setup
+## Project Setup
 - You'll need to have the following minimum installation to work with the project   
   - JDK 21 (I use openjdk but Jetbrains will download a corretto JDK 21 for you if you wish)
   - If you use the command line a lot, you'll need Gradle 8.4 installed

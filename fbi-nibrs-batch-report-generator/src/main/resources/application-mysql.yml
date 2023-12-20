@@ -30,7 +30,7 @@ spring:
         transaction-isolation: TRANSACTION_READ_UNCOMMITTED
   jpa:
     generate-ddl: false
-    open-in-view: true
+    open-in-view: false
     properties:
       hibernate:
         '[show_sql]': true
