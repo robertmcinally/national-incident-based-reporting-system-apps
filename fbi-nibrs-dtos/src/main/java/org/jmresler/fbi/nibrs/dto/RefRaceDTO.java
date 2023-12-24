@@ -39,9 +39,9 @@ public class RefRaceDTO implements Serializable {
     private Short startYear;
     private Short endYear;
     private String notes;
-    private List<NibrsArresteeDTO> nibrsArresteeDTOList;
-    private List<NibrsOffenderDTO> nibrsOffenderDTOList;
-    private List<NibrsVictimDTO> nibrsVictimDTOList;
+    private List<NibrsArresteeDTO> nibrsArresteeList;
+    private List<NibrsOffenderDTO> nibrsOffenderList;
+    private List<NibrsVictimDTO> nibrsVictimList;
 
     @Override
     public String toString() {

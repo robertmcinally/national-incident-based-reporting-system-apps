@@ -36,7 +36,7 @@ public class NibrsCriminalActTypeDTO implements Serializable {
     private Character criminalActCode;
     private String criminalActName;
     private String criminalActDesc;
-    private List<NibrsCriminalActDTO> nibrsCriminalActDTOList;
+    private List<NibrsCriminalActDTO> nibrsCriminalActList;
 
     @Override
     public String toString() {

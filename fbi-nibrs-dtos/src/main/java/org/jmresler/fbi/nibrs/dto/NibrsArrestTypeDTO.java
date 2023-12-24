@@ -36,7 +36,7 @@ public class NibrsArrestTypeDTO implements Serializable {
     private Short arrestTypeId;
     private Character arrestTypeCode;
     private String arrestTypeName;
-    private List<NibrsArresteeDTO> nibrsArresteeDTOList;
+    private List<NibrsArresteeDTO> nibrsArresteeList;
 
     @Override
     public String toString() {

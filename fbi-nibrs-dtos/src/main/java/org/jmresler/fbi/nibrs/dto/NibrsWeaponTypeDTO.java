@@ -36,8 +36,8 @@ public class NibrsWeaponTypeDTO implements Serializable {
     private String weaponCode;
     private String weaponName;
     private Character shrFlag;
-    private List<NibrsArresteeWeaponDTO> nibrsArresteeWeaponDTOList;
-    private List<NibrsWeaponDTO> nibrsWeaponDTOList;
+    private List<NibrsArresteeWeaponDTO> nibrsArresteeWeaponList;
+    private List<NibrsWeaponDTO> nibrsWeaponList;
 
     @Override
     public String toString() {

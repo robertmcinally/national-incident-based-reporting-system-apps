@@ -35,7 +35,7 @@ public class NibrsRelationshipDTO implements Serializable {
     private Short relationshipId;
     private String relationshipCode;
     private String relationshipName;
-    private List<NibrsVictimOffenderRelDTO> nibrsVictimOffenderRelDTOList;
+    private List<NibrsVictimOffenderRelDTO> nibrsVictimOffenderRelList;
 
     @Override
     public String toString() {

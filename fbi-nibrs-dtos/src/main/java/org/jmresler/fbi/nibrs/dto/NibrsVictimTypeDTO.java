@@ -35,7 +35,7 @@ public class NibrsVictimTypeDTO implements Serializable {
     private Short victimTypeId;
     private Character victimTypeCode;
     private String victimTypeName;
-    private List<NibrsVictimDTO> nibrsVictimDTOList;
+    private List<NibrsVictimDTO> nibrsVictimList;
 
     @Override
     public String toString() {

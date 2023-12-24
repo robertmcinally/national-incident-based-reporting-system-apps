@@ -36,8 +36,8 @@ public class NibrsPropertyDTO implements Serializable {
     private Integer dataYear;
     private Short stolenCount;
     private Short recoveredCount;
-    private List<NibrsPropertyDescDTO> nibrsPropertyDescDTOList;
-    private List<NibrsSuspectedDrugDTO> nibrsSuspectedDrugDTOList;
+    private List<NibrsPropertyDescDTO> nibrsPropertyDescList;
+    private List<NibrsSuspectedDrugDTO> nibrsSuspectedDrugList;
     private NibrsIncidentDTO incidentId;
     private NibrsPropLossTypeDTO propLossId;
 

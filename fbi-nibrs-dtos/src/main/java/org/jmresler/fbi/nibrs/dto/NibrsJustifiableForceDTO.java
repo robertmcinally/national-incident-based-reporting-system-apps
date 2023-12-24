@@ -35,7 +35,7 @@ public class NibrsJustifiableForceDTO implements Serializable {
     private Short justifiableForceId;
     private Character justifiableForceCode;
     private String justifiableForceName;
-    private List<NibrsVictimCircumstancesDTO> nibrsVictimCircumstancesDTOList;
+    private List<NibrsVictimCircumstancesDTO> nibrsVictimCircumstancesList;
 
     @Override
     public String toString() {

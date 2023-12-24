@@ -36,7 +36,7 @@ public class NibrsCircumstancesDTO implements Serializable {
     private Character circumstancesType;
     private Short circumstancesCode;
     private String circumstancesName;
-    private List<NibrsVictimCircumstancesDTO> nibrsVictimCircumstancesDTOList;
+    private List<NibrsVictimCircumstancesDTO> nibrsVictimCircumstancesList;
 
     @Override
     public String toString() {

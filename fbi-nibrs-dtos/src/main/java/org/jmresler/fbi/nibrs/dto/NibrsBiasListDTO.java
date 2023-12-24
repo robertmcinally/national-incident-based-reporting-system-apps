@@ -36,7 +36,7 @@ public class NibrsBiasListDTO implements Serializable {
     private String biasCode;
     private String biasName;
     private String biasDesc;
-    private List<NibrsBiasMotivationDTO> nibrsBiasMotivationDTOList;
+    private List<NibrsBiasMotivationDTO> nibrsBiasMotivationList;
 
     @Override
     public String toString() {

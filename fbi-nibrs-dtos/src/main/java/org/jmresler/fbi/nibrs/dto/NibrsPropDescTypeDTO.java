@@ -35,7 +35,7 @@ public class NibrsPropDescTypeDTO implements Serializable {
     private Short propDescId;
     private String propDescName;
     private String propDescCode;
-    private List<NibrsPropertyDescDTO> nibrsPropertyDescDTOList;
+    private List<NibrsPropertyDescDTO> nibrsPropertyDescList;
 
     @Override
     public String toString() {

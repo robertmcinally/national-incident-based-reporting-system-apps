@@ -45,7 +45,7 @@ public class NibrsMonthDTO implements Serializable {
     private String ddocname;
     private Integer monthPubStatus;
     private AgenciesDTO agencyId;
-    private List<NibrsIncidentDTO> nibrsIncidentDTOList;
+    private List<NibrsIncidentDTO> nibrsIncidentList;
 
     @Override
     public String toString() {

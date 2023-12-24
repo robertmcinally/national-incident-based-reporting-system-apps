@@ -88,8 +88,8 @@ public class AgenciesDTO implements Serializable {
     private String publishableFlag;
     private String participated;
     private String nibrsParticipated;
-    private List<NibrsMonthDTO> nibrsMonthDTOList;
-    private List<NibrsIncidentDTO> nibrsIncidentDTOList;
+    private List<NibrsMonthDTO> nibrsMonthList;
+    private List<NibrsIncidentDTO> nibrsIncidentList;
 
     @Override
     public String toString() {

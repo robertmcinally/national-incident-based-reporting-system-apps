@@ -45,14 +45,14 @@ public class NibrsIncidentDTO implements Serializable {
     private String incidentStatus;
     private Character dataHome;
     private Character origFormat;
-    private List<NibrsArresteeDTO> nibrsArresteeDTOList;
-    private List<NibrsOffenseDTO> nibrsOffenseDTOList;
+    private List<NibrsArresteeDTO> nibrsArresteeList;
+    private List<NibrsOffenseDTO> nibrsOffenseList;
     private AgenciesDTO agencyId;
     private NibrsClearedExceptDTO clearedExceptId;
     private NibrsMonthDTO did;
-    private List<NibrsOffenderDTO> nibrsOffenderDTOList;
-    private List<NibrsPropertyDTO> nibrsPropertyDTOList;
-    private List<NibrsVictimDTO> nibrsVictimDTOList;
+    private List<NibrsOffenderDTO> nibrsOffenderList;
+    private List<NibrsPropertyDTO> nibrsPropertyList;
+    private List<NibrsVictimDTO> nibrsVictimList;
 
     @Override
     public String toString() {

@@ -33,13 +33,13 @@ public class NibrsPropertyDescDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
-    protected NibrsPropertyDescPKDTO nibrsPropertyDescPKDTO;
+    protected NibrsPropertyDescPKDTO nibrsPropertyDescPK;
     private Integer dataYear;
     private BigInteger propertyValue;
     private Date dateRecovered;
     private BigInteger nibrsPropDescId;
-    private NibrsPropDescTypeDTO nibrsPropDescTypeDTO;
-    private NibrsPropertyDTO nibrsPropertyDTO;
+    private NibrsPropDescTypeDTO nibrsPropDescType;
+    private NibrsPropertyDTO nibrsProperty;
 
     @Override
     public String toString() {

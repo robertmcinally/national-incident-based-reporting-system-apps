@@ -36,7 +36,7 @@ public class NibrsClearedExceptDTO implements Serializable {
     private Character clearedExceptCode;
     private String clearedExceptName;
     private String clearedExceptDesc;
-    private List<NibrsIncidentDTO> nibrsIncidentDTOList;
+    private List<NibrsIncidentDTO> nibrsIncidentList;
 
     @Override
     public String toString() {

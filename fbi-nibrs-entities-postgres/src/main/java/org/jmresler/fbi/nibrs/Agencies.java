@@ -40,6 +40,9 @@ public class Agencies implements Serializable {
     private Integer yearlyAgencyId;
     @Column(name = "data_year")
     private Integer dataYear;
+    /**
+     * Originating Agency Identifier
+     */
     @Column(name = "ori", length = 25)
     private String ori;
     @Column(name = "legacy_ori", length = 25)

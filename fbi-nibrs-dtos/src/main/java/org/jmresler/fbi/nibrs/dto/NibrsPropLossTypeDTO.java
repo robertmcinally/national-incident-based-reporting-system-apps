@@ -35,7 +35,7 @@ public class NibrsPropLossTypeDTO implements Serializable {
     private Short propLossId;
     private String propLossName;
     private String propLossDesc;
-    private List<NibrsPropertyDTO> nibrsPropertyDTOList;
+    private List<NibrsPropertyDTO> nibrsPropertyList;
 
     @Override
     public String toString() {

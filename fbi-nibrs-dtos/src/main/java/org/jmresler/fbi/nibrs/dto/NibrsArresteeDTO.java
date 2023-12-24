@@ -53,7 +53,7 @@ public class NibrsArresteeDTO implements Serializable {
     private NibrsIncidentDTO incidentId;
     private NibrsOffenseTypeDTO offenseCode;
     private RefRaceDTO raceId;
-    private List<NibrsArresteeWeaponDTO> nibrsArresteeWeaponDTOList;
+    private List<NibrsArresteeWeaponDTO> nibrsArresteeWeaponList;
 
     @Override
     public String toString() {

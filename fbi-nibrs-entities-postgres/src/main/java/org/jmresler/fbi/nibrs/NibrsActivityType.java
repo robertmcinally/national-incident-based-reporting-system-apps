@@ -23,7 +23,20 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.List;
 
-
+/**
+ * activty_type_code,activity_type_name
+ * 01 = Responding to Disturbance Call  (family quarrels, person with firearm, etc.)
+ * 02 = Burglaries in Progress or Pursuing Burglary Suspects
+ * 03 = Robberies in Progress or Pursuing Robbery Suspects
+ * 04 = Attempting Other Arrests
+ * 05 = Civil Disorder (riot, mass disobedience)
+ * 06 = Handling, Transporting, Custody of Prisoners
+ * 07 = Investigating Suspicious Persons or Circumstances
+ * 08 = Ambush, No Warning
+ * 09 = Handling Persons with Mental Illness
+ * 10 = Traffic Pursuits and Stops
+ * 11 = All Other
+ */
 @Data
 @Entity
 @Table(name = "nibrs_activity_type", catalog = "nibrs", schema = "public")

@@ -31,10 +31,10 @@ public class NibrsBiasMotivationDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
-    protected NibrsBiasMotivationPKDTO nibrsBiasMotivationPKDTO;
+    protected NibrsBiasMotivationPKDTO nibrsBiasMotivationPK;
     private Integer dataYear;
-    private NibrsBiasListDTO nibrsBiasListDTO;
-    private NibrsOffenseDTO nibrsOffenseDTO;
+    private NibrsBiasListDTO nibrsBiasList;
+    private NibrsOffenseDTO nibrsOffense;
 
     @Override
     public String toString() {

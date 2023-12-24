@@ -35,9 +35,9 @@ public class NibrsEthnicityDTO implements Serializable {
     private Short ethnicityId;
     private Character ethnicityCode;
     private String ethnicityName;
-    private List<NibrsArresteeDTO> nibrsArresteeDTOList;
-    private List<NibrsOffenderDTO> nibrsOffenderDTOList;
-    private List<NibrsVictimDTO> nibrsVictimDTOList;
+    private List<NibrsArresteeDTO> nibrsArresteeList;
+    private List<NibrsOffenderDTO> nibrsOffenderList;
+    private List<NibrsVictimDTO> nibrsVictimList;
 
     @Override
     public String toString() {

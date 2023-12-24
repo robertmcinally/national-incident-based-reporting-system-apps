@@ -35,7 +35,7 @@ public class NibrsAssignmentTypeDTO implements Serializable {
     private Short assignmentTypeId;
     private Character assignmentTypeCode;
     private String assignmentTypeName;
-    private List<NibrsVictimDTO> nibrsVictimDTOList;
+    private List<NibrsVictimDTO> nibrsVictimList;
 
 
     @Override

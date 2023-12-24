@@ -36,7 +36,7 @@ public class NibrsInjuryDTO implements Serializable {
     private Short injuryId;
     private Character injuryCode;
     private String injuryName;
-    private List<NibrsVictimInjuryDTO> nibrsVictimInjuryDTOList;
+    private List<NibrsVictimInjuryDTO> nibrsVictimInjuryList;
 
     @Override
     public String toString() {

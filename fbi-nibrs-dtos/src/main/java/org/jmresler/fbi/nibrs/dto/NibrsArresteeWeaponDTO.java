@@ -32,11 +32,11 @@ public class NibrsArresteeWeaponDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
-    protected NibrsArresteeWeaponPKDTO nibrsArresteeWeaponPKDTO;
+    protected NibrsArresteeWeaponPKDTO nibrsArresteeWeaponPK;
     private Integer dataYear;
     private BigInteger nibrsArresteeWeaponId;
-    private NibrsArresteeDTO nibrsArresteeDTO;
-    private NibrsWeaponTypeDTO nibrsWeaponTypeDTO;
+    private NibrsArresteeDTO nibrsArrestee;
+    private NibrsWeaponTypeDTO nibrsWeaponType;
 
     @Override
     public String toString() {

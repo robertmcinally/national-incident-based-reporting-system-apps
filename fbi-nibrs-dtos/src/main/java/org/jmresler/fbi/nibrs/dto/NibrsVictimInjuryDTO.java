@@ -31,10 +31,10 @@ public class NibrsVictimInjuryDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
-    protected NibrsVictimInjuryPKDTO nibrsVictimInjuryPKDTO;
+    protected NibrsVictimInjuryPKDTO nibrsVictimInjuryPK;
     private Integer dataYear;
-    private NibrsInjuryDTO nibrsInjuryDTO;
-    private NibrsVictimDTO nibrsVictimDTO;
+    private NibrsInjuryDTO nibrsInjury;
+    private NibrsVictimDTO nibrsVictim;
 
     @Override
     public String toString() {

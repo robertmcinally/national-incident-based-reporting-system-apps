@@ -33,9 +33,9 @@ public class NibrsVictimCircumstancesDTO implements Serializable {
 
     protected NibrsVictimCircumstancesPK nibrsVictimCircumstancesPK;
     private Integer dataYear;
-    private NibrsCircumstancesDTO nibrsCircumstancesDTO;
+    private NibrsCircumstancesDTO nibrsCircumstances;
     private NibrsJustifiableForceDTO justifiableForceId;
-    private NibrsVictimDTO nibrsVictimDTO;
+    private NibrsVictimDTO nibrsVictim;
 
     @Override
     public String toString() {

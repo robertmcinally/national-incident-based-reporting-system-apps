@@ -35,7 +35,7 @@ public class NibrsSuspectedDrugTypeDTO implements Serializable {
     private Short suspectedDrugTypeId;
     private Character suspectedDrugCode;
     private String suspectedDrugName;
-    private List<NibrsSuspectedDrugDTO> nibrsSuspectedDrugDTOList;
+    private List<NibrsSuspectedDrugDTO> nibrsSuspectedDrugList;
 
     @Override
     public String toString() {

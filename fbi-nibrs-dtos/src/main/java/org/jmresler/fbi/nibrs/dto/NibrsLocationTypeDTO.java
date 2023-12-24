@@ -35,7 +35,7 @@ public class NibrsLocationTypeDTO implements Serializable {
     private Long locationId;
     private String locationCode;
     private String locationName;
-    private List<NibrsOffenseDTO> nibrsOffenseDTOList;
+    private List<NibrsOffenseDTO> nibrsOffenseList;
 
     @Override
     public String toString() {

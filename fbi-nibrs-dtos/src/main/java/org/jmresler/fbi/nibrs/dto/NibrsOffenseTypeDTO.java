@@ -40,8 +40,8 @@ public class NibrsOffenseTypeDTO implements Serializable {
     private String hcCode;
     private String offenseCategoryName;
     private String offenseGroup;
-    private List<NibrsArresteeDTO> nibrsArresteeDTOList;
-    private List<NibrsOffenseDTO> nibrsOffenseDTOList;
+    private List<NibrsArresteeDTO> nibrsArresteeList;
+    private List<NibrsOffenseDTO> nibrsOffenseList;
 
     @Override
     public String toString() {

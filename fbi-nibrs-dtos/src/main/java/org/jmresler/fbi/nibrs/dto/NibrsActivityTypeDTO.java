@@ -29,7 +29,7 @@ public class NibrsActivityTypeDTO implements Serializable {
     private Short activityTypeId;
     private String activityTypeCode;
     private String activityTypeName;
-    private List<NibrsVictimDTO> nibrsVictimDTOList;
+    private List<NibrsVictimDTO> nibrsVictimList;
 
     @Override
     public String toString() {

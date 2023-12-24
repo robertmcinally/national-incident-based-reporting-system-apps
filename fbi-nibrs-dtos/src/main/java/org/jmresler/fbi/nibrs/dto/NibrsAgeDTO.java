@@ -30,9 +30,9 @@ public class NibrsAgeDTO implements Serializable {
     private Short ageId;
     private String ageCode;
     private String ageName;
-    private List<NibrsArresteeDTO> nibrsArresteeDTOList;
-    private List<NibrsOffenderDTO> nibrsOffenderDTOList;
-    private List<NibrsVictimDTO> nibrsVictimDTOList;
+    private List<NibrsArresteeDTO> nibrsArresteeList;
+    private List<NibrsOffenderDTO> nibrsOffenderList;
+    private List<NibrsVictimDTO> nibrsVictimList;
 
     @Override
     public String toString() {

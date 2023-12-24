@@ -35,7 +35,7 @@ public class NibrsUsingListDTO implements Serializable {
     private Short suspectUsingId;
     private Character suspectUsingCode;
     private String suspectUsingName;
-    private List<NibrsSuspectUsingDTO> nibrsSuspectUsingDTOList;
+    private List<NibrsSuspectUsingDTO> nibrsSuspectUsingList;
 
     @Override
     public String toString() {

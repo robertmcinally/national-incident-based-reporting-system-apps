@@ -105,6 +105,7 @@ clean {
 
 dependencies {
 
+	// project references
 	implementation project(':fbi-nibrs-dtos')
 	implementation project(':fbi-nibrs-entities-mysql')
 
@@ -126,6 +127,8 @@ dependencies {
 	integrationTestCompileOnly "org.projectlombok:lombok:${lombokVersion}"
 	integrationTestAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
+	// Freemarker templating API
+	implementation 'org.springframework.boot:spring-boot-starter-freemarker'
 
 	developmentOnly "org.springframework.boot:spring-boot-devtools"
 

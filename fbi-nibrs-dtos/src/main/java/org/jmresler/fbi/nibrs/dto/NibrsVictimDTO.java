@@ -42,9 +42,9 @@ public class NibrsVictimDTO implements Serializable {
     private Character residentStatusCode;
     private Short ageRangeLowNum;
     private Short ageRangeHighNum;
-    private List<NibrsVictimOffenseDTO> nibrsVictimOffenseDTOList;
-    private List<NibrsVictimCircumstancesDTO> nibrsVictimCircumstancesDTOList;
-    private List<NibrsVictimInjuryDTO> nibrsVictimInjuryDTOList;
+    private List<NibrsVictimOffenseDTO> nibrsVictimOffenseList;
+    private List<NibrsVictimCircumstancesDTO> nibrsVictimCircumstancesList;
+    private List<NibrsVictimInjuryDTO> nibrsVictimInjuryList;
     private NibrsActivityTypeDTO activityTypeId;
     private NibrsAgeDTO ageId;
     private NibrsAssignmentTypeDTO assignmentTypeId;
@@ -52,7 +52,7 @@ public class NibrsVictimDTO implements Serializable {
     private NibrsIncidentDTO incidentId;
     private NibrsVictimTypeDTO victimTypeId;
     private RefRaceDTO raceId;
-    private List<NibrsVictimOffenderRelDTO> nibrsVictimOffenderRelDTOList;
+    private List<NibrsVictimOffenderRelDTO> nibrsVictimOffenderRelList;
 
     @Override
     public String toString() {
