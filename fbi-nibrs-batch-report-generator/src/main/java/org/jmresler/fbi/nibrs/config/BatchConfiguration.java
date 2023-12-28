@@ -1,66 +1,65 @@
 package org.jmresler.fbi.nibrs.config;
 
 import lombok.extern.slf4j.Slf4j;
-import org.jmresler.fbi.nibrs.Agencies;
+import org.jmresler.fbi.nibrs.dto.AgenciesDTO;
 import org.jmresler.fbi.nibrs.lstnrs.ApplicationListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
+import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.repository.JobRepository;
+import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.builder.StepBuilder;
-import org.springframework.batch.item.ItemReader;
-import org.springframework.batch.item.ItemWriter;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.batch.item.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
-
-import javax.sql.DataSource;
-
 
 @Slf4j
 @Configuration
 public class BatchConfiguration {
 
-    @Autowired
-    protected DataSource metadbDataSource;
-
     @Bean
-    public Job loadJob(
-            final JobRepository repository,
+    public Job reportJob(
             final ApplicationListener applicationListener,
-            final Step loadStep
-    ) {
-        return new JobBuilder("load-job", repository)
-                .listener(applicationListener)
-                .start(loadStep)
-                .build();
-    }
-
-    @Bean
-    public Step loadStep(
-            final PlatformTransactionManager transactionManager,
             final JobRepository repository,
-            final ApplicationListener applicationListener
+            final Step reportStep
     ) {
-        return new StepBuilder("load-step", repository)
+        return new JobBuilder("report-job", repository)
                 .listener(applicationListener)
-                .tasklet((contribution, chunkContext) -> {
+                .start(reportStep).build();
+    }
 
-                    return null;
-                }, transactionManager)
+    @Bean
+    public Step reportStep(
+            final JobRepository repository,
+            final PlatformTransactionManager transactionManager,
+            final ApplicationListener applicationListener,
+            final ItemReader<AgenciesDTO> agenciesDTOItemReader,
+            final  ItemProcessor<AgenciesDTO, AgenciesDTO> agenciesDTOAgenciesDTOItemProcessor,
+            final ItemWriter<AgenciesDTO> agenciesDTOItemWriter
+            ) {
+        return new StepBuilder("report-step", repository)
+                .listener(applicationListener)
+                .<AgenciesDTO, AgenciesDTO>chunk(100, transactionManager)
+                .reader(agenciesDTOItemReader)
+                .processor(agenciesDTOAgenciesDTOItemProcessor)
+                .writer(agenciesDTOItemWriter)
                 .build();
     }
 
-
-    // listeners
     @Bean
-    public ItemReader<Agencies> agenciesItemReader() {
+    public ItemReader<AgenciesDTO> agenciesDTOItemReader() {
         return () -> null;
     }
 
     @Bean
-    public ItemWriter<Agencies> agenciesItemWriter() {
+    public ItemProcessor<AgenciesDTO, AgenciesDTO> agenciesDTOAgenciesDTOItemProcessor() {
+        return item -> null;
+    }
+
+    @Bean
+    public ItemWriter<AgenciesDTO> agenciesDTOItemWriter() {
         return chunk -> {
 
         };

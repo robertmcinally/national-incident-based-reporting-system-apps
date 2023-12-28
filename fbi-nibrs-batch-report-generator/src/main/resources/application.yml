@@ -1,21 +1,5 @@
 spring:
   application:
-    name: nibrs-batch
+    name: report-generator
   profiles:
-    active:
-      - sql-queries
-      - mysql
-
-org:
-  jmresler:
-    nibrs:
-      batch:
-        props:
-        chunk-size: 10
-        allowed-skips: 10
-      email:
-        server: localhost
-        port: 25
-        sender: rmic@rocketmail.com
-        password: password
-        recipients: me, myself, i
+    active: ${RUNTIME_ENV:h2}
